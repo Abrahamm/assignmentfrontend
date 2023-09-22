@@ -1,0 +1,115 @@
+:root {
+  --primary-bg-color: #f2f2f2; /* Light gray background */
+  --table-bg-color: #ffffff; /* White table background */
+  --text-color: #333333; /* Dark gray text color */
+  --border-color: #cccccc; /* Light gray border color */
+  --border-radius: 10px; /* Rounded corners */
+  --spacing: 20px; /* Wide spacing */
+  --primary-button-color: #007bff; /* Blue primary button color */
+  --danger-button-color: #dc3545; /* Red danger button color */
+  --success-button-color: #28a745; /* Green success button color */
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  background-color: var(--table-bg-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th {
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  padding: var(--spacing);
+  text-align: left;
+  border-bottom: 2px solid var(--border-color);
+}
+
+tr {
+  border-bottom: 1px solid var(--border-color);
+}
+
+tr:first-child {
+  font-weight: bold;
+}
+
+td, th {
+  padding: var(--spacing);
+}
+
+td {
+  text-align: left;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button.update {
+  background-color: var(--primary-button-color);
+  color: #fff;
+}
+
+button.btn-warning {
+  background-color: var(--danger-button-color);
+  color: black;
+}
+
+button.create {
+  background-color: var(--success-button-color);
+  color: #fff;
+}
+
+.form-container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.parent-container {
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  flex: 1;
+  font-weight: bold;
+  font-size: 18px; 
+  margin-right: 5px;
+  color: #333;
+}
+
+.form-group input {
+  flex: 2;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  max-width: 80%; 
+}
+
+.form-group input:hover {
+  border-color: #007bff; 
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
